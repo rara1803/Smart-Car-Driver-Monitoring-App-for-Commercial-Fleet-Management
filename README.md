@@ -44,7 +44,7 @@ Both pipelines feed a live Rscore (starting at 100) to an Android app over WebSo
 
 ## Status of this repo
 
-**This repo contains the pipeline source code, not a runnable package.** The fine-tuned weights (`yolopv2.pt`), the exported TensorRT engine (`yolopv2_full.engine`), and the `utils/utils.py` helper module were stored only on the Jetson Orin Nano used for development. That device was later reset by another user before those files could be backed up, so they are not recoverable and are not included here.
+**This repo contains the pipeline source code, not a runnable package.** The fine-tuned weights (`yolopv2.pt`), the exported TensorRT engine (`yolopv2_full.engine`), and the `utils/utils.py` helper module were stored only on the Jetson Orin Nano used for development.
 
 What that means in practice:
 
