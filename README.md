@@ -50,7 +50,7 @@ What that means in practice:
 
 - `demo_trt.py` and `carla_manual_validation.py` are complete, working reference implementations of the lane detection and deviation-scoring logic, export pipeline usage, and CARLA validation harness.
 - To actually run either script, you would need to: (1) fine-tune YOLOPv2 on your own track dataset following the same procedure (segmentation head fine-tuning on tape-on-cardboard imagery), (2) export to TensorRT following NVIDIA's standard ONNX → `onnxsim` → TensorRT engine workflow, and (3) obtain `utils/utils.py` from the original [YOLOPv2](https://github.com/CAIC-AD/YOLOPv2) repo (it supplies `LoadCamera`, `lane_line_mask`, `driving_area_mask`, etc. — used largely unmodified).
-- A recorded demo video of the working pipeline on hardware exists separately; see the Demo section below.
+- A recorded demo video of the working pipeline on hardware exists separately; check out the outputs folder for the results.
 
 ## Expected Project Structure
 
@@ -86,10 +86,6 @@ python3 demo_trt.py --calibrate --calib-frames 60
 ```bash
 python3 carla_manual_validation.py
 ```
-
-## Demo
-
-A recorded video of the pipeline running live on the RC car hardware is available [here](#) *(replace with your upload link — YouTube unlisted or Google Drive works well since the file is large)*.
 
 ## Notes
 
