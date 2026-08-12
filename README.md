@@ -7,7 +7,7 @@ External (road-facing) camera pipeline for a commercial fleet driver-safety syst
 The Smart Car and Driver Monitoring App is a closed-loop driver safety system built on a 1/10 scale RC car prototype. Two AI pipelines run in parallel on a Jetson Orin Nano:
 
 - **Internal pipeline** (teammate's responsibility): ResNet-18 based drowsiness and emotion detection via a driver-facing camera.
-- **External pipeline** (this repo): lane detection and lateral deviation via YOLOPv2, fine-tuned on a custom tape-on-cardboard track and exported to TensorRT for real-time inference.
+- **External pipeline** (this repo): lane detection and lateral deviation via YOLOPv2, fine-tuned on a custom tape-on-cardboard track and exported to TensorRT for real-time inference. It was integrated because a driver may appear to be focused with the eyes open but his mind could be elsewhere. A telling sign of this would be the car swerving outside the lane without pressing the blinker
 
 Both pipelines feed a live Rscore (starting at 100) to an Android app over WebSocket/REST, built by the software team, which displays the score to the driver and logs sessions for fleet admins.
 
