@@ -11,6 +11,9 @@ The Smart Car and Driver Monitoring App is a closed-loop driver safety system bu
 
 Both pipelines feed a live Rscore (starting at 100) to an Android app over WebSocket/REST, built by the software team, which displays the score to the driver and logs sessions for fleet admins.
 
+## The Three Deviation Cases
+![image alt](https://github.com/rara1803/Smart-Car-Driver-Monitoring-App-for-Commercial-Fleet-Management/blob/main/deviation%20cases.png?raw=true)
+
 ## What's in this repo
 
 - **`demo_trt.py`** — the deployed, real-time inference script. Loads the TensorRT-optimized YOLOPv2 engine, runs it against a live IMX219 CSI camera feed, computes a smoothed [0, 1] lateral deviation score, overlays the lane geometry on screen, and writes the live score to a file-based interface for the fleet server integration. Includes an HSV-based backup lane detector (for when the primary model loses the tape lines) and a built-in calibration mode.
