@@ -16,7 +16,7 @@ Both pipelines feed a live Rscore (starting at 100) to an Android app over WebSo
 ## CARLA's Lane Deviation Output
 ![image alt](https://github.com/rara1803/Smart-Car-Driver-Monitoring-App-for-Commercial-Fleet-Management/blob/main/CARLA%20lane%20deviation%20output.png?raw=true)
 ## YOLOpv2 on CARLA
-![image alt](
+![image alt](https://github.com/rara1803/Smart-Car-Driver-Monitoring-App-for-Commercial-Fleet-Management/blob/main/YOLOPv2%20on%20CARLA.jpeg?raw=true)
 
 
 ## What's in this repo
