@@ -13,6 +13,11 @@ Both pipelines feed a live Rscore (starting at 100) to an Android app over WebSo
 
 ## The Three Deviation Cases
 ![image alt](https://github.com/rara1803/Smart-Car-Driver-Monitoring-App-for-Commercial-Fleet-Management/blob/main/deviation%20cases.png?raw=true)
+## CARLA's Lane Deviation Output
+![image alt](https://github.com/rara1803/Smart-Car-Driver-Monitoring-App-for-Commercial-Fleet-Management/blob/main/CARLA%20lane%20deviation%20output.png?raw=true)
+## YOLOpv2 on CARLA
+![image alt](
+
 
 ## What's in this repo
 
